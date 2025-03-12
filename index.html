@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and other head content -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals - John Anemba</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, John Anemba, Web Development, HTML, CSS, JavaScript, Course Page">
+    <meta name="author" content="John Anemba">
+    <link rel="stylesheet" href="styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>WDD 131 – Dynamic Web Fundamentals - John Anemba</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/your-profile" target="_blank">LinkedIn Profile</a></li>
+                <li><a href="https://byupw.instructure.com/" target="_blank">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Favorite Scripture</a></li>
+                <li><a href="your-final-project-folder-link" target="_blank">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main>
+        <section class="card">
+            <h2>About Me</h2>
+            <img src="images/content.jpg" alt="John Anemba in the temple">
+            <p>My name is John Anemba, and I am a return missionary of the Church of Jesus Christ of Latter-Day Saints. I come from a family of eight, and I am the sixth child. I am currently living in Nairobi, Kenya. I am a student at Brigham Young University, studying Computer Science. I am still looking for an eternal companion.</p>
+        </section>
+
+        <section class="card">
+            <h2>My Country: Kenya</h2>
+            <img src="images/flag.jpg" alt="Kenya flag">
+            <p>Kenya is my homeland, and I am proud of its rich culture and natural beauty. It is home to the famous "Big Five" animals and has some of the best game parks in the world. The country is known for its athletic talent, especially in long-distance running, and has earned the title of "Home of the Champions." Kenya’s main income comes from tourism, and the population of approximately 40 million people is made up of 44 different ethnic groups. Our staple foods are Ugali and Chapati, and we are known for our warm hospitality and vibrant culture.</p>
+        </section>
+
+        <section id="courseSection" class="card">
+            <h2>Web and Computer Programming Courses</h2>
+            <button onclick="filterCourses('all')">All Courses</button>
+            <button onclick="filterCourses('wdd')">WDD Courses</button>
+            <button onclick="filterCourses('cse')">CSE Courses</button>
+
+            <div id="coursesList"></div>
+            <p>Total Credits: <span id="totalCredits">0</span></p>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> John Anemba, Nairobi, Kenya</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <!-- JavaScript code to dynamically populate the current year and last modified date -->
+    <script>
+        // Set the current year dynamically
+        document.getElementById("currentyear").textContent = new Date().getFullYear();
+
+        // Set the last modified date dynamically
+        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+
+        // Sample course data
+        const courses = [
+            { name: "WDD 131 - HTML & CSS", category: "wdd", completed: true, credits: 3 },
+            { name: "CSE 123 - Programming with JavaScript", category: "cse", completed: false, credits: 4 },
+            { name: "WDD 132 - JavaScript & DOM Manipulation", category: "wdd", completed: true, credits: 3 },
+            { name: "CSE 234 - Database Systems", category: "cse", completed: false, credits: 4 }
+        ];
+
+        // Function to dynamically render courses
+        function displayCourses(filteredCourses) {
+            const courseListDiv = document.getElementById("coursesList");
+            courseListDiv.innerHTML = "";  // Clear previous content
+
+            let totalCredits = 0;
+
+            filteredCourses.forEach(course => {
+                const courseDiv = document.createElement("div");
+                courseDiv.classList.add("course");
+                courseDiv.style.border = "1px solid #ccc";
+                courseDiv.style.padding = "10px";
+                courseDiv.style.margin = "10px 0";
+
+                const courseTitle = document.createElement("h3");
+                courseTitle.textContent = course.name;
+
+                const courseStatus = document.createElement("p");
+                courseStatus.textContent = course.completed ? "Completed" : "Not Completed";
+                courseStatus.style.color = course.completed ? "green" : "red";
+
+                const courseCredits = document.createElement("p");
+                courseCredits.textContent = `Credits: ${course.credits}`;
+
+                courseDiv.appendChild(courseTitle);
+                courseDiv.appendChild(courseStatus);
+                courseDiv.appendChild(courseCredits);
+
+                courseListDiv.appendChild(courseDiv);
+
+                totalCredits += course.credits;
+            });
+
+            // Update total credits dynamically
+            document.getElementById("totalCredits").textContent = totalCredits;
+        }
+
+        // Function to filter courses by category
+        function filterCourses(category) {
+            let filteredCourses = [];
+            if (category === "all") {
+                filteredCourses = courses;
+            } else {
+                filteredCourses = courses.filter(course => course.category === category);
+            }
+            displayCourses(filteredCourses);
+        }
+
+        // Initially display all courses
+        displayCourses(courses);
+    </script>
+</body>
+
+</html>
