@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Payson Utah Temple",
+    "address": "1494 S 930 W, Payson, UT 84651",
+    "phone": "+1 801-465-4880",
+    "website": "https://www.churchofjesuschrist.org/temples/details/payson-utah-temple?lang=eng",
+    "image": "payson.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Boise Idaho Temple",
+    "address": "1211 S Cole Rd, Boise, ID 83709",
+    "phone": "+1 208-322-4422",
+    "website": "https://www.churchofjesuschrist.org/temples/details/boise-idaho-temple?lang=eng",
+    "image": "boise.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Oakland California Temple",
+    "address": "4770 Lincoln Ave, Oakland, CA 94602",
+    "phone": "+1 510-531-3200",
+    "website": "https://www.churchofjesuschrist.org/temples/details/oakland-california-temple?lang=eng",
+    "image": "oakland.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Seattle Washington Temple",
+    "address": "2808 148th Ave SE, Bellevue, WA 98007",
+    "phone": "+1 425-643-5144",
+    "website": "https://www.churchofjesuschrist.org/temples/details/seattle-washington-temple?lang=eng",
+    "image": "seattle.jpg",
+    "membership": 1
+  },
+  {
+    "name": "Portland Oregon Temple",
+    "address": "13600 SW Kruse Oaks Blvd, Lake Oswego, OR 97035",
+    "phone": "+1 503-639-7066",
+    "website": "https://www.churchofjesuschrist.org/temples/details/portland-oregon-temple?lang=eng",
+    "image": "portland.jpg",
+    "membership": 2
+  },
+  {
+    "name": "Jordan River Utah Temple",
+    "address": "10200 S Temple Dr, South Jordan, UT 84095",
+    "phone": "+1 801-254-3003",
+    "website": "https://www.churchofjesuschrist.org/temples/details/jordan-river-utah-temple?lang=eng",
+    "image": "jordan.jpg",
+    "membership": 3
+  },
+  {
+    "name": "Provo Utah Temple",
+    "address": "2200 Temple Hill Dr, Provo, UT 84604",
+    "phone": "+1 801-375-5775",
+    "website": "https://www.churchofjesuschrist.org/temples/details/provo-utah-temple?lang=eng",
+    "image": "provo.jpg",
+    "membership": 1
+  }
+]
