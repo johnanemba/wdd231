@@ -3,22 +3,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mosiah Valley Chamber Directory</title>
-  <meta name="description" content="Directory of Mosiah Valley Chamber of Commerce Members." />
+  <title>Mosiah Valley Chamber of Commerce</title>
+  <meta name="description" content="Welcome to the Mosiah Valley Chamber of Commerce — supporting local business and community growth." />
   <meta name="author" content="John Anemba" />
 
+  <!-- Scripts -->
+  <script src="js/weather.js" defer></script>
+  <script src="js/spotlight.js" defer></script>
+  <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.getElementById("year").textContent = new Date().getFullYear();
+      document.getElementById("last-modified").textContent = document.lastModified;
+    });
+  </script>
+
   <!-- Open Graph Meta -->
-  <meta property="og:title" content="Mosiah Valley Chamber Directory" />
-  <meta property="og:description" content="Explore our members' businesses and services." />
+  <meta property="og:title" content="Mosiah Valley Chamber of Commerce" />
+  <meta property="og:description" content="Join us to grow your business and engage with the community." />
   <meta property="og:image" content="images/chamber-og-image.jpg" />
-  <meta property="og:url" content="https://yourdomain.com/chamber/directory.html" />
+  <meta property="og:url" content="https://yourdomain.com/chamber/index.html" />
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="images/favicon.png" />
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/directory.css" />
   <link rel="stylesheet" href="css/styles.css" />
 
   <!-- Fonts -->
@@ -30,7 +38,8 @@
     <h1>Mosiah Valley Chamber of Commerce</h1>
     <nav>
       <ul class="main-nav">
-        <li><a href="directory.html" aria-current="page">Directory</a></li>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="events.html">Events</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -39,13 +48,36 @@
   </header>
 
   <main>
-    <section class="view-toggle" aria-label="Toggle member view layout">
-      <button id="grid" class="toggle-btn active" aria-pressed="true" aria-label="Show grid view">⏹️ Grid</button>
-      <button id="list" class="toggle-btn" aria-pressed="false" aria-label="Show list view">📄 List</button>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero.jpg" alt="A beautiful view of Mosiah Valley" loading="lazy" />
+      <div class="cta">
+        <a href="join.html" class="join-button">Join the Chamber</a>
+      </div>
     </section>
 
-    <section id="members-container" class="grid-view" aria-live="polite" aria-label="Chamber Members Directory">
-      <!-- Member cards will be inserted here dynamically -->
+    <!-- Events Section -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>June 5:</strong> Business Expo at Mosiah Hall</li>
+        <li><strong>June 12:</strong> Networking Night at Golden Hotel</li>
+      </ul>
+    </section>
+
+    <!-- Weather Section -->
+    <section id="weather" class="weather">
+      <h2>Local Weather</h2>
+      <div class="current-weather"></div>
+      <div class="forecast"></div>
+    </section>
+
+    <!-- Spotlight Members Section -->
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div class="spotlight-container" id="spotlight-container">
+        <!-- Spotlight cards inserted by JS -->
+      </div>
     </section>
   </main>
 
@@ -54,12 +86,5 @@
     <p>Last Modified: <span id="last-modified"></span></p>
     <p>Contact: info@mosiahvalleychamber.com | +254 726 448 320</p>
   </footer>
-
-  <script>
-    // Footer script
-    document.getElementById("year").textContent = new Date().getFullYear();
-    document.getElementById("last-modified").textContent = document.lastModified;
-  </script>
-  <script src="js/directory.js" defer></script>
 </body>
 </html>

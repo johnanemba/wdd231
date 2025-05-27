@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Alpha Technologies Kenya",
+    "logo": "images/logo.jpg",
+    "phone": "+254 700 123456",
+    "address": "123 Tech Avenue, Nairobi, Kenya",
+    "website": "https://alphatech.co.ke",
+    "membershipLevel": "Gold"
+  },
+  {
+    "name": "Bravo Consulting Nairobi",
+    "logo": "images/logo2.jpg",
+    "phone": "+254 700 987654",
+    "address": "456 Consulting Street, Nairobi, Kenya",
+    "website": "https://bravoconsulting.co.ke",
+    "membershipLevel": "Silver"
+  },
+  {
+    "name": "Delta Fitness Nairobi",
+    "logo": "images/logo.jpg",
+    "phone": "+254 700 444555",
+    "address": "101 Fitness Blvd, Nairobi, Kenya",
+    "website": "https://deltafitness.co.ke",
+    "membershipLevel": "Bronze"
+  }
+]
