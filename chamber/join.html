@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Join the Chamber | John Anemba</title>
+  <meta name="description" content="Apply to become a member of our Chamber of Commerce." />
+  <meta name="author" content="John Anemba" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/membership.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Join the Chamber</h2>
+    <form method="get" action="thankyou.html">
+      <label>
+        First Name:
+        <input type="text" name="firstName" required title="Enter your first name" autocomplete="given-name">
+      </label>
+      <label>
+        Last Name:
+        <input type="text" name="lastName" required title="Enter your last name" autocomplete="family-name">
+      </label>
+      <label>
+        Organizational Title:
+        <input type="text" name="orgTitle" title="Your title in the organization" autocomplete="organization-title"
+               pattern="[A-Za-z\s\-]{7,}">
+      </label>
+      <label>
+        Email:
+        <input type="email" name="email" required title="Enter your email address" autocomplete="email" placeholder="example@email.com">
+      </label>
+      <label>
+        Mobile Phone:
+        <input type="tel" name="phone" required title="Enter your mobile number" autocomplete="tel">
+      </label>
+      <label>
+        Business/Organization Name:
+        <input type="text" name="organization" required title="Enter your business or organization name" autocomplete="organization">
+      </label>
+      <label>
+        Membership Level:
+        <select name="membership" required>
+          <option value="">--Select a Level--</option>
+          <option value="NP">NP Membership (Free)</option>
+          <option value="Bronze">Bronze Membership</option>
+          <option value="Silver">Silver Membership</option>
+          <option value="Gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>
+        Business/Organization Description:
+        <textarea name="description" title="Describe your business or organization"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <section id="membership-cards">
+      <!-- Cards with animation and modal links -->
+      <div class="card" id="np-card">
+        <h3>NP Membership</h3>
+        <p>Perfect for non-profits.</p>
+        <a href="#" class="info-link" data-modal="modal-np">More Info</a>
+      </div>
+      <div class="card" id="bronze-card">
+        <h3>Bronze Membership</h3>
+        <p>Basic membership perks.</p>
+        <a href="#" class="info-link" data-modal="modal-bronze">More Info</a>
+      </div>
+      <div class="card" id="silver-card">
+        <h3>Silver Membership</h3>
+        <p>Enhanced exposure and event access.</p>
+        <a href="#" class="info-link" data-modal="modal-silver">More Info</a>
+      </div>
+      <div class="card" id="gold-card">
+        <h3>Gold Membership</h3>
+        <p>All-inclusive premium benefits.</p>
+        <a href="#" class="info-link" data-modal="modal-gold">More Info</a>
+      </div>
+    </section>
+
+    <!-- Modal Templates -->
+    <div id="modal-np" class="modal hidden"><div class="modal-content"><span class="close">&times;</span><p>No-cost membership for nonprofits. Includes event invites and a directory listing.</p></div></div>
+    <div id="modal-bronze" class="modal hidden"><div class="modal-content"><span class="close">&times;</span><p>Bronze: Includes directory listing, access to networking events, and newsletter features.</p></div></div>
+    <div id="modal-silver" class="modal hidden"><div class="modal-content"><span class="close">&times;</span><p>Silver: Adds spotlight ads and featured event promotions.</p></div></div>
+    <div id="modal-gold" class="modal hidden"><div class="modal-content"><span class="close">&times;</span><p>Gold: Includes all benefits + home page spotlight and priority event placement.</p></div></div>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> John Anemba, Nairobi, Kenya</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

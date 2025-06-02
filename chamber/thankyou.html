@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank You | Chamber Application</title>
+  <meta name="description" content="Thank you for applying to join the chamber." />
+  <meta name="author" content="John Anemba" />
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Chamber of Commerce</h1>
+    <nav>
+      <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Thank You!</h2>
+    <p>We’ve received your membership application. Below is a summary of your submission:</p>
+    <ul>
+      <li><strong>First Name:</strong> <span id="firstName"></span></li>
+      <li><strong>Last Name:</strong> <span id="lastName"></span></li>
+      <li><strong>Email:</strong> <span id="email"></span></li>
+      <li><strong>Phone:</strong> <span id="phone"></span></li>
+      <li><strong>Organization:</strong> <span id="organization"></span></li>
+      <li><strong>Submitted on:</strong> <span id="timestamp"></span></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> John Anemba, Nairobi, Kenya</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
