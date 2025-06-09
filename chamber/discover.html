@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Nairobi - Chamber</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles/base.css" />
+  <link rel="stylesheet" href="styles/discover.css" />
+
+  <!-- JavaScript (deferred) -->
+  <script src="scripts/visitMessage.js" defer></script>
+  <script src="scripts/discover.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Discover Nairobi</h1>
+    <nav>
+      <ul class="main-nav">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <aside class="visit-message">
+      <!-- Visit message will be loaded here via JS -->
+    </aside>
+
+    <section class="discover-grid">
+      <!-- Cards will be dynamically populated here -->
+    </section>
+  </main>
+
+  <footer>
+     <p>&copy; <span id="currentyear"></span> John Anemba, Nairobi, Kenya</p>
+    <p id="lastModified"></p>
+  </footer>
+  </footer>
+</body>
+</html>

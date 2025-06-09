@@ -1,0 +1,128 @@
+/* discover.css */
+
+/* Use Roboto font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+  --primary-color: #2E7D32;
+  --secondary-color: #F5F5F5;
+  --text-color: #333333;
+  --card-bg: #ffffff;
+  --hover-shadow: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+/* Visit Message */
+.visit-message {
+  background-color: #e0f2f1;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid var(--primary-color);
+  font-weight: bold;
+  border-radius: 4px;
+  max-width: 600px;
+}
+
+/* Discover Grid */
+.discover-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards */
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid #ddd;
+  border-left: 5px solid var(--primary-color);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px var(--hover-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card h2 {
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.card figure {
+  margin: 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card address {
+  font-style: normal;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  flex-grow: 1;
+}
+
+.card button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #1b5e20;
+}
+
+/* Responsive grid columns */
+
+/* Small screens: 1 column */
+@media (min-width: 320px) {
+  .discover-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium screens: 2 columns */
+@media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Only apply hover effect if device can hover */
+  @media (hover: hover) and (pointer: fine) {
+    .card img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+  }
+}
+
+/* Large screens: 4 columns */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
