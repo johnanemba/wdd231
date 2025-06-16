@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Karura Forest",
+    "image": "images/karura.jpg",
+    "address": "Limuru Road, Nairobi",
+    "description": "A beautiful urban forest offering hiking trails, picnic sites, and waterfalls."
+  },
+  {
+    "name": "Nairobi National Museum",
+    "image": "images/museum.jpg",
+    "address": "Museum Hill, Nairobi",
+    "description": "Showcasing Kenya's history, culture, and contemporary art."
+  },
+  {
+    "name": "Giraffe Centre",
+    "image": "images/giraffe.jpg",
+    "address": "Lang'ata, Nairobi",
+    "description": "A sanctuary to learn and interact with endangered Rothschild giraffes."
+  },
+  {
+    "name": "Nairobi National Park",
+    "image": "images/nationalpark.jpg",
+    "address": "Lang'ata Road, Nairobi",
+    "description": "A full wildlife safari experience just minutes from the city."
+  },
+  {
+    "name": "Bomas of Kenya",
+    "image": "images/bomas.jpg",
+    "address": "Lang’ata Rd, Nairobi",
+    "description": "Cultural center featuring traditional homesteads and dances."
+  },
+  {
+    "name": "David Sheldrick Wildlife Trust",
+    "image": "images/sheldrick.jpg",
+    "address": "Magadi Rd, Nairobi",
+    "description": "Famous elephant orphanage known for conservation efforts."
+  },
+  {
+    "name": "Nairobi Railway Museum",
+    "image": "images/railway.jpg",
+    "address": "Haile Selassie Ave, Nairobi",
+    "description": "Historical locomotives and railway history of East Africa."
+  },
+  {
+    "name": "Uhuru Park",
+    "image": "images/uhuru.jpg",
+    "address": "Kenyatta Avenue, Nairobi",
+    "description": "A popular recreational park in the heart of Nairobi."
+  }
+]

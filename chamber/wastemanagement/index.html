@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - Waste Management</title>
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <header>
+    <h1>Waste Management</h1>
+    <nav>
+      <button class="hamburger" aria-label="Toggle Menu">☰</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recycling.html">Recycling</a></li>
+        <li><a href="resources.html">Resources</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Welcome to the Waste Management Site</h2>
+      <p>Learn how to reduce waste, recycle responsibly, and protect the environment.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> John Anemba | BYU–Idaho | WDD 231</p>
+  </footer>
+
+  <script>
+    // Display current year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

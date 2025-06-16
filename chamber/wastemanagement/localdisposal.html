@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Find local waste disposal resources and services near you to manage waste responsibly." />
+  <meta name="author" content="John Anemba" />
+  <meta property="og:title" content="Local Disposal - Waste Management" />
+  <meta property="og:description" content="Access local waste management resources and facilities in your area." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://johnanemba.github.io/wdd231/finalproject/localdisposal.html" />
+  <meta property="og:image" content="https://johnanemba.github.io/wdd231/finalproject/images/local-disposal-banner.jpg" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/localdisposal.css" />
+  <script src="scripts/localdisposal.js" defer></script>
+  <title>Local Disposal - Waste Management</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.jpg" alt="Waste Management Logo" width="50" height="50" />
+      <h1>Waste Management</h1>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <nav id="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recycling.html">Recycling</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="localdisposal.html" class="active">Local Disposal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/local-disposal-banner.jpg" alt="Waste disposal facility" loading="lazy" />
+      <h2>Local Disposal Resources</h2>
+      <p>Find facilities and drop-off points near you for proper waste disposal and recycling.</p>
+    </section>
+
+    <section id="local-resources" class="grid-layout">
+      <!-- JavaScript will dynamically inject local disposal items here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> John Anemba | WDD 231 | Kenya</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.youtube.com/your-demo-video-link" target="_blank">Video Demo</a></p>
+  </footer>
+
+  <script type="module" src="scripts/localdisposal.js"></script>
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

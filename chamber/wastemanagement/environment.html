@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Learn how to manage waste, recycle properly, and find local disposal resources." />
+  <meta name="author" content="John Anemba" />
+  <meta property="og:title" content="WasteManagement" />
+  <meta property="og:description" content="Practical tips and resources to manage waste and keep our environment clean." />
+  <meta property="og:image" content="images/og-image.jpg" />
+  <meta property="og:url" content="https://johnanemba.github.io/wdd231/final/" />
+  <title>WasteManagement - Home</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/environment.css" />
+  <link rel="stylesheet" href="styles/environ.css" />
+  <script type="module" src="scripts/main.js" defer></script>
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header>
+    <div class="logo">
+      WasteManagement
+      <img src="images/logo.jpg" alt="Waste Management Logo" class="logo-image">
+    </div>
+
+    <button id="menu-button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+
+    <nav id="nav-menu">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="recycling.html">Recycling Tips</a></li>
+        <li><a href="disposal.html">Local Disposal</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <h1>Keep Our Planet Clean</h1>
+      <p>Learn how to manage your waste effectively and contribute to a healthier environment.</p>
+    </section>
+
+    <section class="content">
+      <h2>Featured Tips</h2>
+      <div id="tips-container" class="card-grid"></div>
+    </section>
+
+    <section class="subscribe">
+      <h2>Subscribe for Weekly Tips</h2>
+      <form id="subscribe-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 WasteManagement | John Anemba</p>
+    <a href="attributions.html">Attributions</a> |
+    <a href="https://youtube.com/yourdemolink" target

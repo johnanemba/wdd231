@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore recycling tips and best practices to reduce waste and protect the environment." />
+  <meta name="author" content="John Anemba" />
+  <meta property="og:title" content="Recycling Tips - Waste Management" />
+  <meta property="og:description" content="Learn how to recycle effectively and responsibly with our practical tips." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://johnanemba.github.io/wdd231/finalproject/recycling.html" />
+  <meta property="og:image" content="https://johnanemba.github.io/wdd231/finalproject/images/recycling-banner.jpg" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/environment.css" />
+  <script src="scripts/recycling.js" defer></script>
+  <title>Recycling Tips - Waste Management</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo-title">
+      <img src="images/logo.jpg" alt="Waste Management Logo" width="50" height="50" />
+      <h1>Waste Management</h1>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+    <nav id="main-nav">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recycling.html" class="active">Recycling</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="form.html">Contact</a></li>
+        <li><a href="https://johnanemba.github.io/wdd231/finalproject/">Final</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/recycling-banner.jpg" alt="Recycling bins" loading="lazy" />
+      <h2>Recycling Tips</h2>
+      <p>Learn how to properly sort and recycle items to reduce your environmental impact.</p>
+    </section>
+
+    <section id="recycling-tips" class="grid-layout">
+      <!-- JavaScript will dynamically inject at least 15 recycling items here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> John Anemba | WDD 231 | Kenya</p>
+    <p><a href="attributions.html">Attributions</a> | <a href="https://www.youtube.com/your-demo-video-link" target="_blank">Video Demo</a></p>
+  </footer>
+
+  <script type="module" src="scripts/recycling.js"></script>
+  <script>
+    // Dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

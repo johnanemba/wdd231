@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Plastic Bottles",
+    "type": "Plastic",
+    "instructions": "Rinse and remove caps before recycling.",
+    "image": "images/plastic-bottle.jpg",
+    "details": "Recycle #1 and #2 plastics only. Avoid soft plastics like plastic bags."
+  },
+  {
+    "id": 2,
+    "name": "Cardboard",
+    "type": "Paper",
+    "instructions": "Flatten boxes. Remove any tape or labels.",
+    "image": "images/cardboard.jpg",
+    "details": "Keep cardboard clean and dry. Greasy boxes belong in compost or trash."
+  },
+  {
+    "id": 3,
+    "name": "Aluminum Cans",
+    "type": "Metal",
+    "instructions": "Rinse to remove residue before placing in the bin.",
+    "image": "images/aluminum-cans.jpg",
+    "details": "Aluminum is 100% recyclable. Crushed cans save space."
+  },
+  {
+    "id": 4,
+    "name": "Glass Bottles",
+    "type": "Glass",
+    "instructions": "Remove lids. Rinse bottles thoroughly.",
+    "image": "images/glass-bottles.jpg",
+    "details": "Do not include mirrors or broken glass. Check your local program."
+  },
+  {
+    "id": 5,
+    "name": "Newspapers",
+    "type": "Paper",
+    "instructions": "Stack neatly and keep dry.",
+    "image": "images/newspaper.jpg",
+    "details": "Bundle with string if required. Avoid mixing with magazines."
+  },
+  {
+    "id": 6,
+    "name": "Steel Food Cans",
+    "type": "Metal",
+    "instructions": "Rinse cans. Labels may stay on.",
+    "image": "images/steel-cans.jpg",
+    "details": "Flatten if possible. Recycle with metals."
+  },
+  {
+    "id": 7,
+    "name": "Magazines",
+    "type": "Paper",
+    "instructions": "Keep dry. Do not include plastic-wrapped issues.",
+    "image": "images/magazines.jpg",
+    "details": "Recycle with other glossy paper."
+  },
+  {
+    "id": 8,
+    "name": "Milk Jugs",
+    "type": "Plastic",
+    "instructions": "Rinse. Flatten to save space.",
+    "image": "images/milk-jug.jpg",
+    "details": "Usually HDPE plastic. Recycle separately from caps."
+  },
+  {
+    "id": 9,
+    "name": "Junk Mail",
+    "type": "Paper",
+    "instructions": "Remove plastic windows and glossy ads.",
+    "image": "images/junk-mail.jpg",
+    "details": "Most plain paper can be recycled."
+  },
+  {
+    "id": 10,
+    "name": "Tin Foil",
+    "type": "Metal",
+    "instructions": "Clean thoroughly and ball it up.",
+    "image": "images/tin-foil.jpg",
+    "details": "Only recycle large, clean pieces."
+  },
+  {
+    "id": 11,
+    "name": "Egg Cartons",
+    "type": "Paper",
+    "instructions": "Recycle paper-based cartons. Foam ones go to trash.",
+    "image": "images/egg-carton.jpg",
+    "details": "Great for compost too!"
+  },
+  {
+    "id": 12,
+    "name": "Paper Bags",
+    "type": "Paper",
+    "instructions": "Flatten and keep dry.",
+    "image": "images/paper-bag.jpg",
+    "details": "Reusable and recyclable."
+  },
+  {
+    "id": 13,
+    "name": "Printer Paper",
+    "type": "Paper",
+    "instructions": "No staples or plastic sleeves.",
+    "image": "images/printer-paper.jpg",
+    "details": "Keep paper clean and dry."
+  },
+  {
+    "id": 14,
+    "name": "Glass Jars",
+    "type": "Glass",
+    "instructions": "Rinse and remove food residue. Labels okay.",
+    "image": "images/glass-jar.jpg",
+    "details": "Check color-sorting rules in your area."
+  },
+  {
+    "id": 15,
+    "name": "Cereal Boxes",
+    "type": "Paperboard",
+    "instructions": "Remove plastic liner and flatten box.",
+    "image": "images/cereal-box.jpg",
+    "details": "Clean, dry paperboard is easy to recycle."
+  }
+]
